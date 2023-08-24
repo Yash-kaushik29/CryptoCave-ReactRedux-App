@@ -5,9 +5,10 @@ import { Layout, Typography, Space } from 'antd'
 import { Navbar, Homepage, Cryptocurrencies, Exchanges, CryptoDetails, News } from './components'
 import './App.css'
 
+const { Title } = Typography  
+
 const App = () => {
 
-  const { Title } = Typography  
   return (
     <div className='app'>
         <div className='navbar'>

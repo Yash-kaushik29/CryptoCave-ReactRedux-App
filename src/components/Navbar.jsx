@@ -5,9 +5,9 @@ import { HomeOutlined, MoneyCollectOutlined, FundOutlined, BulbOutlined } from '
 
 import icon from '../images/cryptocurrency.png'
 
-const Navbar = () => {
+const { Title } = Typography
 
-  const { Title } = Typography
+const Navbar = () => {
 
   return (
     <div className='nav-container'>
