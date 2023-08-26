@@ -38,7 +38,7 @@ const Exchanges = () => {
       </Title>
       <Title
         level={3}
-        style={{ color: "gray", textAlign: "center", marginBottom: "100px" }}
+        style={{ color: "gray", textAlign: "center", marginBottom: "50px" }}
       >
         We are working on this page right now.....
       </Title>

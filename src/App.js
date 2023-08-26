@@ -34,7 +34,7 @@ const App = () => {
         </Layout>
         <div className="footer">
           <Title level={5} style={{ color: "white", textAlign: "center" }}>
-            CrpytoCave <br />
+            &copy; CryptoCave {new Date().getFullYear()} <br />
             All rights reserved
           </Title>
           <Space>
