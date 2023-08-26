@@ -4,6 +4,7 @@ import moment from 'moment'
 
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 import { useGetCryptosQuery } from '../services/cryptoApi'
+import Loader from './Loader'
 
 const { Text, Title } = Typography
 const { Option } = Select
@@ -13,10 +14,10 @@ const demoImageUrl = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid
 const News = ({ simplified }) => {
   const [newsCategory, setNewsCategory] = useState('Cryptocurrency')
   const count = simplified ? 6 : 30
-  const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count })
+  const { data: cryptoNews, isFetching } = useGetCryptoNewsQuery({ newsCategory, count })
   const { data } = useGetCryptosQuery(100)
 
-  if(!cryptoNews?.value) return 'Loading........'
+  if(isFetching) return (<Loader />)
 
   console.log(cryptoNews)
 

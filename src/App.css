@@ -261,6 +261,15 @@ a:hover{
     background-color: var(--bgSecondary);
 }
 
+.footer {
+    margin-left: -100px;
+    background-color: #001529;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
 @media screen and (max-width:1000px){
     .stats-container{
         flex-direction: column;
@@ -271,6 +280,9 @@ a:hover{
     .stats-container h2{
         margin-top: 0px;
     }
+    .footer {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -280,10 +292,16 @@ a:hover{
     .coin-detail-container{
         margin: 0;
     }
+    .footer {
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 500px){
     .heading{
         margin-top: 20px;
+    }
+    .footer {
+        margin-left: 0;
     }
 }
 
@@ -369,10 +387,3 @@ width: 70%;
     margin-top: 20px !important;
 }
 
-.footer {
-    background-color: #001529;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
-}
